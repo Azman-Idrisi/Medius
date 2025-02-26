@@ -1,4 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+
+import type { Config } from "tailwindcss";
+
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +9,12 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily : {
+        shafarik: ['Shafarik', 'sans-serif'],
+        roboto: ['Roboto', "sans-serif"],
+        poppins: ['Poppins', "sans-serif"],
+        opensans : ['Open Sans', "sans-serif"]
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -14,4 +22,4 @@ export default {
     },
   },
   plugins: [],
-};
+} satisfies Config;
