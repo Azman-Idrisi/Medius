@@ -5,7 +5,6 @@ import {
   Clock,
   Facebook,
   Instagram,
-  Link,
   Linkedin,
   Star,
   StarHalf,
