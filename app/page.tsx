@@ -150,7 +150,7 @@ export default function Home() {
         {/* Mobile View */}
         <div className="md:hidden flex flex-col justify-center px-4 pt-8 pb-4 bg-[#f9f9f7]">
           <h2 className="text-5xl font-bold text-[#292B29] mb-6">
-            Find out why <br /> we're better.
+            Find out why <br /> we&apos;re better.
           </h2>
 
           <button className="font-poppins w-full py-4 bg-[#004732] text-white rounded-full text-lg shadow-sm hover:bg-[#00402e] transition-all mb-6">
@@ -224,7 +224,7 @@ export default function Home() {
           {/* Right side - Find out why message */}
           <div className="md:w-1/2 flex flex-col justify-center mt-10 md:mt-0 md:pl-36">
             <h2 className="text-5xl md:text-7xl font-bold text-[#292B29] mb-6">
-              Find out why <br /> we're better.
+              Find out why <br /> we&apos;re better.
             </h2>
 
             <button className="font-poppins px-8 py-4 bg-[#004732] text-white rounded-full text-lg shadow-sm hover:bg-[#00402e] transition-all w-fit mb-6">
@@ -249,12 +249,12 @@ export default function Home() {
         <div className="w-full">
           <div className=" md:ml-[60px] ml-[20px] mb-10">
             <span className="block md:hidden text-[2.75rem] font-semibold font-opensans leading-[3rem] text-xl ">
-              Got Questions? <br /> We've got <br /> answers
+              Got Questions? <br /> We&apos;ve got <br /> answers
             </span>
 
             {/* Visible only on desktop */}
             <span className="hidden md:block text-[2.5rem] font-bold font-opensans leading-[3rem]">
-              Got Questions? <br /> We've got answers
+              Got Questions? <br /> We&apos;ve got answers
             </span>
           </div>
 
@@ -424,7 +424,7 @@ export default function Home() {
               {[
                 {
                   title: "Better Mortgage",
-                  desc: "We can't wait to say 'Welcome home.' Apply 100% online, with expert customer support.",
+                  desc: "We can&apos;t wait to say &apos;Welcome home.&apos; Apply 100% online, with expert customer support.",
                 },
                 {
                   title: "Better Real Estate",
@@ -617,7 +617,7 @@ export default function Home() {
           {/* Disclaimer Paragraphs */}
           <div className="space-y-4 mb-8 border-b border-gray-200 pb-6">
             <p className="text-xs sm:text-sm leading-tight">
-              *Better Mortgage's One Day Mortgage® promotion offers qualified
+              *Better Mortgage&apos;s One Day Mortgage® promotion offers qualified
               customers who provide certain required financial
               information/documentation to Better Mortgage within 4 hours of
               locking a rate on a mortgage loan the opportunity to receive an
@@ -632,7 +632,7 @@ export default function Home() {
               .
             </p>
             <p className="text-xs sm:text-sm leading-tight">
-              *Better Mortgage's One Day HELOC® promotion offers qualified
+              *Better Mortgage&apos;s One Day HELOC® promotion offers qualified
               customers who provide certain required financial
               information/documentation within 4 hours of locking a rate on a
               HELOC loan the opportunity to receive an underwriting
