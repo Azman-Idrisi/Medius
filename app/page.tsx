@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar";
 import { useState } from "react";
 import Cards from "./components/Cards";
 
-export default function page() {
+export default function Page() {
   const testimonials = [
     {
       name: "Arian",
@@ -40,6 +40,7 @@ export default function page() {
   ];
 
   const [active, setActive] = useState(0);
+
   return (
     <>
       <Navbar />
