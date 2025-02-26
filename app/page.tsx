@@ -14,7 +14,7 @@ import Navbar from "./components/Navbar";
 import { useState } from "react";
 import Cards from "./components/Cards";
 
-export default function Home() {
+export default function page() {
   const testimonials = [
     {
       name: "Arian",
