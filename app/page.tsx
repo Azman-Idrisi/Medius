@@ -3,9 +3,6 @@
 import {
   ArrowRight,
   Clock,
-  Facebook,
-  Instagram,
-  Linkedin,
   Star,
   StarHalf,
 } from "lucide-react";
@@ -13,6 +10,8 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 import { useState } from "react";
 import Cards from "./components/Cards";
+import Better from "./components/Better";
+import Footer from "./components/Footer";
 
 export default function Page() {
   const testimonials = [
@@ -300,7 +299,7 @@ export default function Page() {
               altText="Beautiful House"
             />
             <Cards
-              title="One day Mortage"
+              title="One day Mortgage"
               imageUrl="/1day.png"
               altText="Beautiful House"
             />
@@ -339,7 +338,7 @@ export default function Page() {
               <div className="bg-[#f0f7f1] w-[906px] h-[358px] flex flex-row">
                 <div className="flex flex-col gap-6 mt-[35px] ml-[48px] w-[485px] h-[288]">
                   <span className="text-[24px] font-semibold font-poppins">
-                    One Day Mortage
+                    One Day Mortgage
                   </span>
                   <p className="text-[14px]">
                     Kick your home loan into hyperdrive. Going from locked rate
@@ -408,316 +407,9 @@ export default function Page() {
 
       {/* Section 4 */}
 
-      <section className="mt-[80rem] md:mt-40 lg:mt-72 px-4">
-        <div className="max-w-[80rem] mx-auto py-8 font-roboto flex flex-col items-center text-center md:text-left">
-          <div className="mb-6">
-            <h1 className="text-3xl font-bold text-green-700">Better</h1>
-            <p className="text-base text-gray-700 mt-2">
-              Better is a family of companies serving all your homeownership
-              needs.
-            </p>
-          </div>
+      <Better />
 
-          {/* Grid Layout */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
-            {/* Better Services */}
-            <div>
-              {[
-                {
-                  title: "Better Mortgage",
-                  desc: "We can&apos;t wait to say &apos;Welcome home.&apos; Apply 100% online, with expert customer support.",
-                },
-                {
-                  title: "Better Real Estate",
-                  desc: "Connect with a local Better Real Estate Partner Agent to find out all the ways you can save.",
-                },
-                {
-                  title: "Better Cover",
-                  desc: "Shop, bundle, and save on insurance coverage for home, auto, life, and more.",
-                },
-                {
-                  title: "Better Inspect",
-                  desc: "Get free repair estimates, 24-hour turnarounds on reports, and rest easy with our 100-day inspection guarantee.",
-                },
-                {
-                  title: "Better Settlement Services",
-                  desc: "Get transparent rates when you shop for title insurance all in one convenient place.",
-                },
-              ].map((service, index) => (
-                <div key={index} className="mb-6">
-                  <h2 className="text-lg font-bold text-green-700">
-                    {service.title}
-                  </h2>
-                  <p className="text-sm text-gray-600 mt-1">{service.desc}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Resources */}
-            <div>
-              <h2 className="text-lg font-semibold text-gray-800 mb-4">
-                Resources
-              </h2>
-              <ul className="space-y-3">
-                {[
-                  "Home affordability calculator",
-                  "Mortgage calculator",
-                  "Free mortgage calculator",
-                  "Mortgage calculator with taxes",
-                  "Mortgage calculator with PMI",
-                  "Rent vs buy calculator",
-                  "HELOC payment calculator",
-                  "HELOC vs cash-out refinance calculator",
-                  "Buy a home",
-                  "Sell a home",
-                  "Get home inspection",
-                ].map((item, index) => (
-                  <li key={index}>
-                    <a
-                      href="#"
-                      className="text-sm text-gray-600 hover:text-green-700"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Company */}
-            <div>
-              <h2 className="text-lg font-semibold text-gray-800 mb-4">
-                Company
-              </h2>
-              <ul className="space-y-3">
-                {[
-                  "About Us",
-                  "Careers",
-                  "Media",
-                  "Partner With Us",
-                  "Learning center",
-                  "FAQs",
-                  "Investor Relations",
-                ].map((item, index) => (
-                  <li key={index}>
-                    <a
-                      href="#"
-                      className="text-sm text-gray-600 hover:text-green-700"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Contact & Legal */}
-            <div>
-              <div className="mb-6">
-                <h2 className="text-lg font-semibold text-gray-800 mb-4">
-                  Contact Us
-                </h2>
-                <ul className="space-y-3">
-                  <li>
-                    <a
-                      href="mailto:hello@better.com"
-                      className="text-sm text-gray-600 hover:text-green-700"
-                    >
-                      hello@better.com
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="tel:4155238837"
-                      className="text-sm text-gray-600 hover:text-green-700"
-                    >
-                      415-523-8837
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-sm text-gray-600 hover:text-green-700"
-                    >
-                      FAQ
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#"
-                      className="text-sm text-gray-600 hover:text-green-700"
-                    >
-                      Glossary
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h2 className="text-lg font-semibold text-gray-800 mb-4">
-                  Legal
-                </h2>
-                <ul className="space-y-3">
-                  {[
-                    "NMLS Consumer Access",
-                    "Privacy Policy",
-                    "Terms of Use",
-                    "Disclosures & Licensing",
-                    "Affiliated Business",
-                    "Browser Disclaimer",
-                  ].map((item, index) => (
-                    <li key={index}>
-                      <a
-                        href="#"
-                        className="text-sm text-gray-600 hover:text-green-700"
-                      >
-                        {item}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Equal Housing Logos */}
-          <div className="mt-8 flex justify-center space-x-4">
-            {["EHL", "EHO"].map((logo, index) => (
-              <div
-                key={index}
-                className="w-10 h-10 border-2 border-gray-400 flex items-center justify-center text-sm text-gray-500"
-              >
-                {logo}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="h-auto mt-0 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-xs text-gray-600">
-          {/* Social Media Icons */}
-          <div className="flex flex-wrap gap-4 mb-6 justify-center sm:justify-start">
-            <a href="#" className="text-gray-600 hover:text-gray-800">
-              <span className="inline-flex w-10 h-10 border border-gray-400 rounded-full items-center justify-center">
-                <Facebook size={16} />
-              </span>
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">
-              <span className="inline-flex w-10 h-10 border border-gray-400 rounded-full items-center justify-center">
-                <Instagram size={16} />
-              </span>
-            </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">
-              <span className="inline-flex w-10 h-10 border border-gray-400 rounded-full items-center justify-center">
-                <Linkedin size={16} />
-              </span>
-            </a>
-          </div>
-
-          {/* Disclaimer Paragraphs */}
-          <div className="space-y-4 mb-8 border-b border-gray-200 pb-6">
-            <p className="text-xs sm:text-sm leading-tight">
-              *Better Mortgage&apos;s One Day Mortgage® promotion offers qualified
-              customers who provide certain required financial
-              information/documentation to Better Mortgage within 4 hours of
-              locking a rate on a mortgage loan the opportunity to receive an
-              underwriting determination from Better Mortgage within 24 hours of
-              their rate lock. See{" "}
-              <a
-                href="#"
-                className="underline text-gray-600 hover:text-gray-800"
-              >
-                One Day Mortgage® Terms and Conditions
-              </a>
-              .
-            </p>
-            <p className="text-xs sm:text-sm leading-tight">
-              *Better Mortgage&apos;s One Day HELOC® promotion offers qualified
-              customers who provide certain required financial
-              information/documentation within 4 hours of locking a rate on a
-              HELOC loan the opportunity to receive an underwriting
-              determination within 24 hours. See{" "}
-              <a
-                href="#"
-                className="underline text-gray-600 hover:text-gray-800"
-              >
-                One Day HELOC® Terms and Conditions
-              </a>
-              .
-            </p>
-            <p className="text-xs sm:text-sm leading-tight">
-              *Assumes borrowers are eligible for the Automated Valuation Model
-              (AVM) to calculate their home value. Funding timelines may vary.
-            </p>
-          </div>
-
-          {/* Company Info */}
-          <div className="space-y-4 text-xs sm:text-sm leading-tight">
-            <p>
-              © 2025 Better Home & Finance Holding Company. Better is a family
-              of companies. Better Mortgage Corporation provides home loans;
-              Better Real Estate, LLC provides real estate services. All rights
-              reserved.
-            </p>
-            <p>
-              Home lending products offered by Better Mortgage Corporation. NMLS
-              #330511.{" "}
-              <a
-                href="#"
-                className="underline text-gray-600 hover:text-gray-800"
-              >
-                NMLS Consumer Access
-              </a>
-              .
-            </p>
-            <p>
-              Better Real Estate, LLC dba BRE, operating in California through
-              its wholly owned subsidiary, maintains its headquarters at 325-41
-              Chestnut Street, Suite 826, Philadelphia, PA 19106.{" "}
-              <a
-                href="#"
-                className="underline text-gray-600 hover:text-gray-800"
-              >
-                Full listing of license numbers
-              </a>
-              .
-            </p>
-            <p>
-              <a
-                href="#"
-                className="underline text-gray-600 hover:text-gray-800"
-              >
-                New York State Housing and Anti-Discrimination Notice
-              </a>
-              .
-            </p>
-            <p>
-              Texas Real Estate Commission:{" "}
-              <a
-                href="#"
-                className="underline text-gray-600 hover:text-gray-800"
-              >
-                Information About Brokerage Services
-              </a>{" "}
-              |{" "}
-              <a
-                href="#"
-                className="underline text-gray-600 hover:text-gray-800"
-              >
-                Consumer Protection Notice
-              </a>
-              .
-            </p>
-            <p>
-              Any unauthorized use of proprietary or intellectual property is
-              strictly prohibited. All trademarks, service marks, trade names,
-              logos, and domain names are proprietary to Better Home & Finance
-              Holding Company.
-            </p>
-          </div>
-        </div>
-      </section>
+     <Footer />
     </>
   );
 }

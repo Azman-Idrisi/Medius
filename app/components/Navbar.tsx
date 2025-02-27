@@ -8,20 +8,32 @@ import { motion, AnimatePresence } from "framer-motion";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  const [navBg, setNavBg] = useState("#004733");
+  const [navBg, setNavBg] = useState("transparent");
   const [textColor, setTextColor] = useState("text-white");
 
   useEffect(() => {
     const handleScroll = () => {
-      const secondSection = document.getElementById("white-section");
-      if (secondSection) {
-        const sectionTop = secondSection.offsetTop;
-        if (window.scrollY >= sectionTop - 50) {
-          setNavBg("#FFFFFF");
-          setTextColor("text-black");
-        } else {
-          setNavBg("#004733");
+      // Get the first section to check its background color
+      const sections = document.querySelectorAll('section');
+      
+      if (sections.length > 0) {
+        const firstSection = sections[0];
+        
+        // Check if the section has a background color class
+        const hasGreenBg = firstSection.classList.contains('bg-[#004733]');
+        const hasWhiteBg = firstSection.classList.contains('bg-white');
+        
+        // Set colors based on the section's background
+        if (hasGreenBg) {
           setTextColor("text-white");
+          setNavBg("#004733"); // Set to green background when section is green
+        } else if (hasWhiteBg) {
+          setTextColor("text-black");
+          setNavBg("white");
+        } else {
+          // Default colors if background can't be determined
+          setTextColor("text-black");
+          setNavBg("white");
         }
       }
     };
@@ -29,7 +41,7 @@ const Navbar = () => {
     // Set initial colors
     handleScroll();
 
-    // Add scroll event listener
+    // Add scroll event listener for multi-section pages
     window.addEventListener("scroll", handleScroll);
 
     // Cleanup function
@@ -38,15 +50,15 @@ const Navbar = () => {
     };
   }, []);
 
-  // Function to determine border color based on background
+  // Function to determine border color based on text color
   const getBorderClass = () => {
-    return navBg === "#FFFFFF" ? "border-black/30" : "border-white/30";
+    return textColor === "text-black" ? "border-black/30" : "border-white/30";
   };
 
-  // Determine hover styles for the phone button based on navbar background
+  // Determine hover styles for the phone button based on text color
   const getPhoneButtonHoverStyles = () => {
     if (isHovered) {
-      return navBg === "#FFFFFF"
+      return textColor === "text-black"
         ? "bg-black text-white"
         : "bg-white text-black";
     }
@@ -175,7 +187,7 @@ const Navbar = () => {
             <Link
               href="/buy"
               className={
-                navBg === "#FFFFFF"
+                textColor === "text-black"
                   ? "hover:text-green-800"
                   : "hover:text-green-200"
               }
@@ -185,7 +197,7 @@ const Navbar = () => {
             <Link
               href="/refinance"
               className={
-                navBg === "#FFFFFF"
+                textColor === "text-black"
                   ? "hover:text-green-800"
                   : "hover:text-green-200"
               }
@@ -195,7 +207,7 @@ const Navbar = () => {
             <Link
               href="/heloc"
               className={
-                navBg === "#FFFFFF"
+                textColor === "text-black"
                   ? "hover:text-green-800"
                   : "hover:text-green-200"
               }
@@ -205,7 +217,7 @@ const Navbar = () => {
             <Link
               href="/rates"
               className={
-                navBg === "#FFFFFF"
+                textColor === "text-black"
                   ? "hover:text-green-800"
                   : "hover:text-green-200"
               }
@@ -215,7 +227,7 @@ const Navbar = () => {
             <Link
               href="/better-plus"
               className={
-                navBg === "#FFFFFF"
+                textColor === "text-black"
                   ? "hover:text-green-800"
                   : "hover:text-green-200"
               }
@@ -251,7 +263,7 @@ const Navbar = () => {
             href="/signin"
             className={`relative px-6 py-2 rounded-full transition-all duration-300 
               ${
-                navBg === "#FFFFFF"
+                textColor === "text-black"
                   ? "hover:bg-green-900 hover:text-white"
                   : "hover:bg-white hover:text-green-900"
               }`}
