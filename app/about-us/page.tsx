@@ -85,9 +85,11 @@ export default function Page() {
 
           {/* Right Content - Image with Play Button */}
           <div className="relative">
-            <img
+            <Image
               src="/vishal.png"
               alt="Vishal Garg"
+              width={300}
+              height={300}
               className="w-full h-auto rounded-lg shadow-lg"
             />
             <div className="absolute inset-0 flex items-center justify-center">

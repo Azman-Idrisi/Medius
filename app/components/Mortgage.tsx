@@ -3,8 +3,6 @@
 import Image from "next/image";
 import React, { useState, useEffect, ChangeEvent } from "react";
 import PropertyTaxTable from "./PropertyTaxTable";
-import { FileCheck, Calculator , } from "lucide-react";
-import Card from "./Cards";
 import MortgageCards from "./MortgageCards";
 import Better from "./Better";
 import Footer from "./Footer";
@@ -464,7 +462,7 @@ const MortgageCalculator: React.FC = () => {
           lenders understand how safe or risky it is for them to approve your
           loan. A DTI ratio represents how much of your gross monthly income is
           spoken for by creditors, and how much of it is left over to you as
-          disposable income. It’s most commonly written as a percentage. For
+          disposable income. It&apos;s most commonly written as a percentage. For
           example, if you pay half your monthly income in debt payments, you
           would have a DTI of 50%.
         </p>
@@ -476,12 +474,12 @@ const MortgageCalculator: React.FC = () => {
         </span>
         <Image src="/d1.png" alt="d1" width={700} height={300} />
         <span className="font-bold text-2xl mt-3 mb-3">
-          Here's an example of what calculating your DTI might look like:
+          Here&apos;s an example of what calculating your DTI might look like:
         </span>
         <Image src="/d2.png" alt="d2" width={750} height={500} />
         <p className="md:px-24 mt-3 text-gray-500">
           This formula assumes a fixed-rate mortgage, where the interest rate
-          remains constant throughout the loan term. And remember, you’ll still
+          remains constant throughout the loan term. And remember, you&apos;ll still
           need to add on taxes, insurance, utilities, and HOA fees if
           applicable.
         </p>
@@ -501,15 +499,15 @@ const MortgageCalculator: React.FC = () => {
             Increasing your down payment and decreasing your interest rate and
             mortgage term length will make your monthly payment go down. Taxes,
             insurance, and HOA fees will vary by location. If you enter a down
-            payment amount that’s less than 20% of the home price, private
+            payment amount that&apos;s less than 20% of the home price, private
             mortgage insurance (PMI) costs will be added to your monthly
             mortgage payment. As the costs of utilities can vary from county to
-            county, we’ve included a utilities estimate that you can break down
-            by service. If you’re thinking about buying a condo or into a
+            county, we&apos;ve included a utilities estimate that you can break down
+            by service. If you&apos;re thinking about buying a condo or into a
             community with a Homeowners Association (HOA), you can add HOA fees.
           </span>
           <span>
-            The only amounts we haven’t included are the money you’ll need to
+            The only amounts we haven&apos;t included are the money you&apos;ll need to
             save for annual home maintenance/repairs or the costs of home
             improvements. To see how much home you can afford including these
             costs, take a look at the Better home affordability calculator.
@@ -532,8 +530,8 @@ const MortgageCalculator: React.FC = () => {
           <span>
             While exact property tax rates vary by county, it can be helpful to
             look at taxes on the state level to get an idea for taxes in your
-            state. Here’s a helpful chart from Forbes breaking down the Census
-            Bureau’s 2021 American Community Survey 5-year estimate:
+            state. Here&apos;s a helpful chart from Forbes breaking down the Census
+            Bureau&apos;s 2021 American Community Survey 5-year estimate:
           </span>
         </div>
       </div>
@@ -542,7 +540,7 @@ const MortgageCalculator: React.FC = () => {
 
       <div className="pt-8 md:px-24 px-12 mt-14  font-poppins border-t border-gray-300 bg-white">
         <h3 className="text-4xl font-semibold text-gray-800 mb-4">
-          How is Better’s mortgage calculator different?
+          How is Better&apos;s mortgage calculator different?
         </h3>
         <div className="flex flex-col gap-4 text-gray-500">
           <span className="text-2xl text-black font-semibold font-roboto mt-6">
@@ -561,13 +559,13 @@ const MortgageCalculator: React.FC = () => {
             </span>
             <span>
               Your lender will usually require you to have homeowners insurance
-              while you're settling your mortgage. This is a common practice
+              while you&apos;re settling your mortgage. This is a common practice
               among lenders because they understand that nobody wants to
-              continue paying a mortgage on a home that's been damaged or
+              continue paying a mortgage on a home that&apos;s been damaged or
               destroyed.
             </span>
             <span>
-              Here's an interesting fact: Once you fully own your home, the
+              Here&apos;s an interesting fact: Once you fully own your home, the
               choice to maintain homeowners insurance is entirely up to you.
               However, to ensure your home is protected against damages caused
               by fires, lightning strikes, and natural disasters that are common
@@ -591,12 +589,12 @@ const MortgageCalculator: React.FC = () => {
               Choosing a mortgage with PMI is a popular option: 71% of
               first-time homebuyers had a down payment of less than 20% in July
               2021. In 2020, the median down payment for first-time homebuyers
-              was just 7%, and it hasn’t risen above 10% since 1989.
+              was just 7%, and it hasn&apos;t risen above 10% since 1989.
             </span>
             <span>
               PMI is automatically removed from conventional mortgages once your
               home equity reaches 22%. Alternatively, you can request the
-              removal of PMI once you've accumulated at least 20% home equity.
+              removal of PMI once you&apos;ve accumulated at least 20% home equity.
             </span>
           </div>
           <span className="text-2xl text-black font-semibold font-roboto mt-6">
@@ -606,7 +604,7 @@ const MortgageCalculator: React.FC = () => {
             <span>
               Homeowners association (“HOA”) fees are typically charged directly
               by a homeowners association, but as HOA fees come part and parcel
-              with condos, townhomes, and planned housing developments, they’re
+              with condos, townhomes, and planned housing developments, they&apos;re
               an essential factor to consider when calculating your mortgage
               costs.
             </span>
@@ -614,10 +612,10 @@ const MortgageCalculator: React.FC = () => {
               Homes that share structural elements, such as roofs and walls, or
               community amenities like landscaping, pools, or BBQ areas, often
               require homeowners to pay HOA fees for the maintenance of these
-              shared features. It's important to factor in these costs during
+              shared features. It&apos;s important to factor in these costs during
               your budget planning stage, especially considering that HOA fees
               typically increase annually. HOAs may also charge additional fees
-              known as 'special assessments' to cover unexpected expenses from
+              known as &apos;special assessments&apos; to cover unexpected expenses from
               time to time.
             </span>
           </div>
@@ -640,8 +638,8 @@ const MortgageCalculator: React.FC = () => {
             </span>
             <span>
               The more time you have to pay off the mortgage, the less each
-              monthly mortgage payment will be. In lender-speak, 'extending the
-              length of your mortgage' is known as 'increasing your loan term'.
+              monthly mortgage payment will be. In lender-speak, &apos;extending the
+              length of your mortgage&apos; is known as &apos;increasing your loan term&apos;.
               This is why people often choose a 30-year fixed rate mortgage over
               one with a 15- or 20-year term.
             </span>
@@ -652,9 +650,9 @@ const MortgageCalculator: React.FC = () => {
           <div className="flex flex-col gap-4">
             <span>
               The smaller the amount of your mortgage, the smaller your monthly
-              mortgage payments will be. If you’re able to put at least 20% of
-              the home price towards your down payment, you’ll be able to avoid
-              PMI (private mortgage insurance). Even if you can’t afford a
+              mortgage payments will be. If you&apos;re able to put at least 20% of
+              the home price towards your down payment, you&apos;ll be able to avoid
+              PMI (private mortgage insurance). Even if you can&apos;t afford a
               complete 20% down payment, boosting your down payment will help
               you get PMI removed sooner. In fact, boosting your down payment by
               5% can lower your monthly PMI fees.
@@ -687,11 +685,11 @@ const MortgageCalculator: React.FC = () => {
               may increase after consummation). The introductory interest rate
               for ARMs is typically lower than the interest rate for a
               conventional fixed-rate mortgage which could make it a great way
-              to save on interest if you know you won't keep the mortgage for
+              to save on interest if you know you won&apos;t keep the mortgage for
               long.
             </span>
             <span>
-              If you're not planning on buying a home for a while, improving
+              If you&apos;re not planning on buying a home for a while, improving
               your credit score is a tried and true way of increasing your
               chances of qualifying for a lower interest rate. By reducing your
               debt-to-income ratio (DTI), lenders will see that you comfortably
@@ -723,25 +721,25 @@ const MortgageCalculator: React.FC = () => {
           </span>
           <span className="text-md  text-gray-500 font-semilight font-poppins mt-6">
             There are 8 steps to buying a house and by using this calculator
-            you've completed step 2 calculating your home affordability and
+            you&apos;ve completed step 2 calculating your home affordability and
             maybe even step 1 getting your finances in order.
           </span>
           <span className="text-md  text-gray-500 font-semilight font-poppins mt-6">
             The next step is getting pre-approved. A mortgage pre-approval with
-            Better Mortgage takes as little as 3-minutes and doesn't impact your
-            credit score. It's a free, no-commitment way to see how much home
+            Better Mortgage takes as little as 3-minutes and doesn&apos;t impact your
+            credit score. It&apos;s a free, no-commitment way to see how much home
             you can buy, the mortgages you qualify for, and the range of
-            interest rates you'll be offered.
+            interest rates you&apos;ll be offered.
           </span>
           <span className="text-md  text-gray-500 font-semilight font-poppins mt-6">
-            If you're ready to buy a home now, our definitive home buying
+            If you&apos;re ready to buy a home now, our definitive home buying
             checklist can walk you through everything you need to know to get
             the home you want. With your Better Mortgage pre-approval letter in
-            hand, you'll be able to show sellers and real estate agents that you
-            mean business—giving you an edge over homebuyers that don't have
-            this kind of proof that they're financially ready to purchase. And
+            hand, you&apos;ll be able to show sellers and real estate agents that you
+            mean business—giving you an edge over homebuyers that don&apos;t have
+            this kind of proof that they&apos;re financially ready to purchase. And
             by working with an agent from Better Real Estate and funding with
-            Better Mortgage, you'll save $2,000 on closing costs, and save up to
+            Better Mortgage, you&apos;ll save $2,000 on closing costs, and save up to
             $8,200 on average over the life of your loan.
           </span>
         </div>
