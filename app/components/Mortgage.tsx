@@ -8,7 +8,6 @@ import Better from "./Better";
 import Footer from "./Footer";
 
 const MortgageCalculator: React.FC = () => {
-  // State for all input values
   const [homePrice, setHomePrice] = useState<number>(406600);
   const [downPayment, setDownPayment] = useState<number>(81320);
   const [downPaymentPercent, setDownPaymentPercent] = useState<number>(20);
@@ -24,7 +23,6 @@ const MortgageCalculator: React.FC = () => {
   const [monthlyPayment, setMonthlyPayment] = useState<number>(0);
   const [principalAndInterest, setPrincipalAndInterest] = useState<number>(0);
 
-  // Calculate mortgage whenever relevant inputs change
   useEffect(() => {
     calculateMortgage();
   }, [
@@ -38,7 +36,6 @@ const MortgageCalculator: React.FC = () => {
     utilities,
   ]);
 
-  // Handle down payment changes - keep percentage and amount in sync
   const handleDownPaymentChange = (value: string): void => {
     const numericValue = parseFloat(value) || 0;
     setDownPayment(numericValue);
@@ -53,7 +50,6 @@ const MortgageCalculator: React.FC = () => {
     setDownPayment(Number(((numericValue / 100) * homePrice).toFixed(0)));
   };
 
-  // Handle home price changes and recalculate down payment amount
   const handleHomePriceChange = (value: string): void => {
     const numericValue = parseFloat(value) || 0;
     setHomePrice(numericValue);
@@ -62,18 +58,14 @@ const MortgageCalculator: React.FC = () => {
     );
   };
 
-  // Calculate mortgage payments
   const calculateMortgage = (): void => {
     // Calculate loan amount
     const loanAmount = homePrice - downPayment;
 
-    // Monthly interest rate (annual rate divided by 12)
     const monthlyRate = interestRate / 100 / 12;
 
-    // Total number of payments
     const payments = loanTerm * 12;
 
-    // Calculate principal and interest payment (standard mortgage formula)
     let monthlyPrincipalAndInterest = 0;
     if (monthlyRate > 0) {
       monthlyPrincipalAndInterest =
@@ -85,7 +77,6 @@ const MortgageCalculator: React.FC = () => {
 
     setPrincipalAndInterest(monthlyPrincipalAndInterest);
 
-    // Calculate total monthly payment (P&I + taxes + insurance + HOA)
     const totalMonthly =
       monthlyPrincipalAndInterest +
       Number(propertyTaxes) +
@@ -93,18 +84,8 @@ const MortgageCalculator: React.FC = () => {
       Number(hoaFees) +
       Number(utilities);
 
-      setMonthlyPayment(totalMonthly);
+    setMonthlyPayment(totalMonthly);
   };
-
-  // Format currency
-  // const formatCurrency = (value: number): string => {
-  //   return new Intl.NumberFormat("en-US", {
-  //     style: "currency",
-  //     currency: "USD",
-  //     minimumFractionDigits: 0,
-  //     maximumFractionDigits: 0,
-  //   }).format(value);
-  // };
 
   return (
     <div className="bg-[#fefdf9]">

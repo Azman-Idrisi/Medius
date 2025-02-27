@@ -13,38 +13,31 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Get the first section to check its background color
-      const sections = document.querySelectorAll('section');
-      
+      const sections = document.querySelectorAll("section");
+
       if (sections.length > 0) {
         const firstSection = sections[0];
-        
-        // Check if the section has a background color class
-        const hasGreenBg = firstSection.classList.contains('bg-[#004733]');
-        const hasWhiteBg = firstSection.classList.contains('bg-white');
-        
-        // Set colors based on the section's background
+
+        const hasGreenBg = firstSection.classList.contains("bg-[#004733]");
+        const hasWhiteBg = firstSection.classList.contains("bg-white");
+
         if (hasGreenBg) {
           setTextColor("text-white");
-          setNavBg("#004733"); // Set to green background when section is green
+          setNavBg("#004733");
         } else if (hasWhiteBg) {
           setTextColor("text-black");
           setNavBg("white");
         } else {
-          // Default colors if background can't be determined
           setTextColor("text-black");
           setNavBg("white");
         }
       }
     };
 
-    // Set initial colors
     handleScroll();
 
-    // Add scroll event listener for multi-section pages
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup function
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -92,7 +85,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Sliding Mobile Menu */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
@@ -106,7 +98,6 @@ const Navbar = () => {
               <span className="font-shafarik font-bold text-4xl">Better</span>
             </div>
 
-            {/* Close Button */}
             <button
               aria-label="Close Menu"
               onClick={() => setIsMenuOpen(false)}
@@ -115,7 +106,6 @@ const Navbar = () => {
               <X size={32} />
             </button>
 
-            {/* Menu Items */}
             <ul className="space-y-4 mt-10">
               <li>
                 <Link href="/buy" className="block py-2">
@@ -149,7 +139,6 @@ const Navbar = () => {
               </li>
             </ul>
 
-            {/* Call Button in Menu */}
             <div className="mt-6">
               <button className="w-full flex items-center gap-3 px-4 py-2 bg-[#f0f7f0] text-black rounded-full">
                 <Phone size={20} />
@@ -177,7 +166,6 @@ const Navbar = () => {
         )}
       </AnimatePresence>
 
-      {/* Desktop Navigation */}
       <div className="hidden md:flex justify-between items-center px-12 py-6">
         <div className="flex items-center space-x-10">
           <Link href="/" className="font-shafarik text-2xl font-bold">

@@ -13,7 +13,6 @@ interface PropertyTaxData {
 const PropertyTaxTable: React.FC = () => {
   const [showAll, setShowAll] = useState(false);
 
-  // Complete dataset of property tax information
   const propertyTaxData: PropertyTaxData[] = [
     {
       state: "AL",
@@ -375,10 +374,10 @@ const PropertyTaxTable: React.FC = () => {
     },
   ];
 
-  // Determine which rows to display
+  
   const displayData = showAll ? propertyTaxData : propertyTaxData.slice(0, 4);
 
-  // Toggle show all data
+  
   const toggleShowAll = () => {
     setShowAll(!showAll);
   };
@@ -437,7 +436,6 @@ const PropertyTaxTable: React.FC = () => {
         </table>
       </div>
 
-      {/* Show More button */}
       <div className="mt-4 text-center">
         <button
           onClick={toggleShowAll}

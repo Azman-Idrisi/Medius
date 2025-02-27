@@ -12,9 +12,9 @@ const Better = () => {
           </p>
         </div>
 
-        {/* Grid Layout */}
+     
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
-          {/* Better Services */}
+          
           <div>
             {[
               {
@@ -47,7 +47,7 @@ const Better = () => {
             ))}
           </div>
 
-          {/* Resources */}
+        
           <div>
             <h2 className="text-lg font-semibold text-gray-800 mb-4">
               Resources
@@ -78,7 +78,7 @@ const Better = () => {
             </ul>
           </div>
 
-          {/* Company */}
+         
           <div>
             <h2 className="text-lg font-semibold text-gray-800 mb-4">
               Company
@@ -105,7 +105,7 @@ const Better = () => {
             </ul>
           </div>
 
-          {/* Contact & Legal */}
+     
           <div>
             <div className="mb-6">
               <h2 className="text-lg font-semibold text-gray-800 mb-4">
@@ -174,7 +174,7 @@ const Better = () => {
           </div>
         </div>
 
-        {/* Equal Housing Logos */}
+
         <div className="mt-8 flex justify-center space-x-4">
           {["EHL", "EHO"].map((logo, index) => (
             <div

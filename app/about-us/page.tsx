@@ -2,7 +2,6 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Bottom from "../components/aboutus/Bottom";
 
-
 export default function Page() {
   return (
     <section className="h-dvh bg-white">
@@ -61,29 +60,25 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Laptop View */}
-
       <div className="hidden md:flex items-center justify-center min-h-screen bg-[#fdfbf6] px-36">
         <div className="grid grid-cols-2 gap-10 items-center">
-          {/* Left Content */}
           <div className="max-w-lg">
             <h2 className="text-4xl font-semibold text-gray-900">
               The status quo is broken
             </h2>
             <p className="text-lg text-gray-700 mt-4">
               The traditional processes around homeownership are opaque and
-              stressful. Fees aren&apos;t transparent and some are simply outrageous
-              in size. Traditional mortgage lending is rife with unnecessary
-              fees and slow, painful processes. It&apos;s a system set up to benefit
-              insiders — not you. Better.com CEO, Vishal Garg, set out to change
-              that.
+              stressful. Fees aren&apos;t transparent and some are simply
+              outrageous in size. Traditional mortgage lending is rife with
+              unnecessary fees and slow, painful processes. It&apos;s a system
+              set up to benefit insiders — not you. Better.com CEO, Vishal Garg,
+              set out to change that.
             </p>
             <button className="bg-[#017848] text-white font-medium px-6 py-3 rounded-lg shadow-md hover:bg-[#01663e] transition mt-6">
               Read Vishal&apos;s story
             </button>
           </div>
 
-          {/* Right Content - Image with Play Button */}
           <div className="relative">
             <Image
               src="/vishal.png"

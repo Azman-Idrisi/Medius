@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <section className="h-auto mt-0 bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-xs text-gray-600">
-        {/* Social Media Icons */}
+        
         <div className="flex flex-wrap gap-4 mb-6 justify-center sm:justify-start">
           <a href="#" className="text-gray-600 hover:text-gray-800">
             <span className="inline-flex w-10 h-10 border border-gray-400 rounded-full items-center justify-center">
@@ -24,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
 
-        {/* Disclaimer Paragraphs */}
+        
         <div className="space-y-4 mb-8 border-b border-gray-200 pb-6">
           <p className="text-xs sm:text-sm leading-tight">
             *Better Mortgage&apos;s One Day Mortgage® promotion offers qualified
@@ -55,7 +55,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Company Info */}
+      
         <div className="space-y-4 text-xs sm:text-sm leading-tight">
           <p>
             © 2025 Better Home & Finance Holding Company. Better is a family of

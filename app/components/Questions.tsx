@@ -24,7 +24,7 @@ const Questions: React.FC = () => {
             Got Questions? <br /> We&apos;ve got <br /> answers
           </span>
 
-          {/* Visible only on desktop */}
+         
           <span className="hidden md:block text-[2.5rem] font-bold font-opensans leading-[3rem]">
             Got Questions? <br /> We&apos;ve got answers
           </span>

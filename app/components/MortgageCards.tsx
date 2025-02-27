@@ -1,7 +1,7 @@
 import React from 'react';
 import { Calculator, ChevronRight, BarChart, FileCheck } from 'lucide-react';
 
-// Define proper types for the Card component props
+
 interface CardProps {
   icon: React.ReactNode;
   title: string;
@@ -9,7 +9,7 @@ interface CardProps {
   subText: string;
 }
 
-// Reusable Card component with proper type definition
+
 const Card: React.FC<CardProps> = ({ icon, title, linkText, subText }) => {
   return (
     <div className="bg-white rounded-lg border border-gray-200 p-6 flex flex-col flex-1">
@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({ icon, title, linkText, subText }) => {
 const MortgageCards: React.FC = () => {
   return (
     <div className="w-full max-w-7xl mx-auto">
-      {/* Desktop view - cards in a row */}
+     
       <div className="hidden md:flex md:flex-row md:gap-4 md:justify-between">
         <Card 
           icon={<FileCheck className="w-6 h-6 text-green-600" />}
@@ -57,7 +57,7 @@ const MortgageCards: React.FC = () => {
         />
       </div>
 
-      {/* Mobile view - stacked cards */}
+      
       <div className="flex flex-col gap-4 md:hidden">
         <Card 
           icon={<FileCheck className="w-6 h-6 text-green-600" />}

@@ -30,24 +30,17 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Divider with profile avatar */}
       <div className="relative mb-12">
         <hr className="border-gray-200" />
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-1">
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-200">
             <div className="w-full h-full flex items-center justify-center">
-              <Image 
-              src = "/girl.png"
-              alt = "girl"
-              width={300}
-              height={300}
-              />
+              <Image src="/girl.png" alt="girl" width={300} height={300} />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Greeting and options */}
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">
           Hi, I&apos;m Betsy!
@@ -56,7 +49,6 @@ export default function Page() {
           What can I help you with?
         </h2>
 
-        {/* Option buttons */}
         <div className="space-y-4 max-w-lg mx-auto">
           <button className="w-full flex items-center border border-green-700 rounded-lg p-4 hover:bg-gray-50 transition">
             <div className="w-8 h-8 flex items-center justify-center bg-emerald-50 rounded-md mr-4">
@@ -138,7 +130,6 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Unlock benefits */}
       <div className="bg-emerald-50 rounded-lg p-6 max-w-lg mx-auto">
         <p className="text-center text-gray-700 mb-4">
           After a few questions, you&apos;ll unlock:
