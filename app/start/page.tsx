@@ -37,7 +37,7 @@ export default function Page() {
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-200">
             <div className="w-full h-full flex items-center justify-center">
               <Image 
-              src = '/girl.png'
+              src = "/girl.png"
               alt = "girl"
               width={300}
               height={300}
@@ -50,7 +50,7 @@ export default function Page() {
       {/* Greeting and options */}
       <div className="text-center mb-10">
         <h1 className="text-4xl font-bold text-gray-800 mb-2">
-          Hi, I'm Betsy!
+          Hi, I&apos;m Betsy!
         </h1>
         <h2 className="text-3xl text-gray-700 mb-8">
           What can I help you with?
@@ -141,7 +141,7 @@ export default function Page() {
       {/* Unlock benefits */}
       <div className="bg-emerald-50 rounded-lg p-6 max-w-lg mx-auto">
         <p className="text-center text-gray-700 mb-4">
-          After a few questions, you'll unlock:
+          After a few questions, you&apos;ll unlock:
         </p>
 
         <div className="space-y-4">
