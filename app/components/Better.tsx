@@ -2,7 +2,7 @@ import React from "react";
 
 const Better = () => {
   return (
-    <section className={`mt-[5rem] px-4`}>
+    <section className={`hidden md:block md:mt-[5rem] px-4`}>
       <div className="max-w-[80rem] mx-auto py-8 font-roboto flex flex-col items-center text-center md:text-left">
         <div className="mb-6">
           <h1 className="text-3xl font-bold text-green-700">Better</h1>
